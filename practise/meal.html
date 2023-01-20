@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=f">
+    <title>I am Hungry</title>
+    <link rel="stylesheet" href="meal.css">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-fonp9HHUyt9UO_uPo_KQEpBlMDztzWIpwA&usqp=CAU"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-warning text-center mt-3">Exploring Meals</h1>
+    </header>
+    <main>
+
+        <!-- search container -->
+
+        <section class="text-center align-content-center">
+            <input type="text" placeholder="Search your food" id="search-field" class="text-info fs-4 input-style">
+            <button onclick="SearchFood()" class="btn btn-danger text-white btn-style rounded-0 fs-4">Search</button>
+        </section>
+
+        <!-- details container -->
+
+        <section class="container">
+            <h2>Meal Details </h2>
+            <div style="width: 25rem;" id="meal-details-container">
+                
+            </div>
+        </section>
+
+        <!-- meal container -->
+
+        <section class="container">
+            <h2 class="py-3">My Meals</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="meal-container">
+
+            </div>
+        </section>
+    </main>
+    <footer class="text-center mb-4 mt-4">
+        <button class="btn btn-outline-info shadow-lg rounded-3 me-2"><a href="https://www.themealdb.com/" class="text-decoration-none text-danger fw-bolder" target="_blank" rel="noopener noreferrer">Go Our More Websites</a></button>
+        <button class="btn btn-outline-info shadow-lg rounded-3 ms-2 me-2"><a href="https://www.amazon.com/" class="text-decoration-none text-danger fw-bolder" target="_blank" rel="noopener noreferrer">Go Our More Websites</a></button>
+        <button class="btn btn-outline-info shadow-lg rounded-3 ms-2 me-2"><a href="https://www.foodpanda.com/" class="text-decoration-none text-danger fw-bolder" target="_blank" rel="noopener noreferrer">Go Our More Websites</a></button>
+        <button class="btn btn-outline-info shadow-lg rounded-3 ms-2"><a href="https://www.foodnetwork.com/" class="text-decoration-none text-danger fw-bolder" target="_blank" rel="noopener noreferrer">Go Our More Websites</a></button>
+    </footer>
+    <script src="meal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
